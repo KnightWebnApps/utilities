@@ -1,0 +1,84 @@
+.center {
+  display: grid;
+  place-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--grid-col-breakpoint), 1fr)
+  );
+}
+
+.page {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.sidebar {
+  display: grid;
+  grid-template-columns: fit-content(20ch) minmax(min(50vw, 30ch), 1fr);
+}
+
+.overlay-hero {
+  display: grid;
+  grid-template-areas: "hero";
+  height: 65vh;
+  max-height: 600px;
+  width: 100%;
+}
+
+.overlay-hero > * {
+  grid-area: hero;
+}
+
+.horizontal-scroll {
+  /* Set up container positioning */
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1.5rem;
+  /* Enable overflow along our scroll axis */
+  overflow-x: auto;
+  height: 200px;
+  /* Define axis and scroll type, where
+  `mandatory` means any scroll attempt will
+  cause a scroll to the next item */
+  scroll-snap-type: x mandatory;
+  padding: 0 0 1.5rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.horizontal-scroll > * {
+  flex: 0 0 auto;
+  width: 14em;
+  margin-right: 1em;
+  display: inline-block;
+  /* overflow-x: scroll; */
+  /* Choose how to align children on scroll */
+  scroll-snap-align: center;
+  /* Prevents scrolling past more than one child */
+  scroll-snap-stop: always;
+}
+
+[class*="-evenly"] {
+  justify-content: space-evenly;
+}
+
+[class*="-between"] {
+  justify-content: space-between;
+}
+
+[class*="-around"] {
+  justify-content: space-around;
+}
