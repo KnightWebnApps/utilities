@@ -1,0 +1,40 @@
+{
+  "name": "webdev",
+  "description": "A tools to create web projects of all kinds.",
+  "version": "0.0.0",
+  "author": "KnightWebnApps @KnightWebnApps",
+  "bin": {
+    "webdev": "./bin/run"
+  },
+  "bugs": "https://github.com/KnightWebnApps/webdev/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^3"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/src"
+  ],
+  "homepage": "https://github.com/KnightWebnApps/webdev",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "bin": "webdev"
+  },
+  "repository": "KnightWebnApps/webdev",
+  "scripts": {
+    "prepack": "oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
