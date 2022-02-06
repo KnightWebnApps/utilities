@@ -15,18 +15,18 @@
 
   // Muted colors
   --muted-color: #{$grey-500};
-  --muted-border-color: #{mix($grey-900, $grey-800, 75%)};
+  --muted-border-color: #{mix($grey-900, $grey-300, 75%)};
 
   // Primary colors
   --primary: #{$primary-600};
   --primary-hover: #{$primary-500};
   --primary-focus: #{rgba($primary-600, 0.25)};
-  --primary-inverse: #{$white};
+  --primary-inverse: #{$black};
 
   // Secondary colors
-  --secondary: #{$grey-600};
-  --secondary-hover: #{$grey-500};
-  --secondary-focus: #{rgba($grey-500, 0.25)};
+  --secondary: #{$grey-300};
+  --secondary-hover: #{$grey-400};
+  --secondary-focus: #{rgba($grey-400, 0.25)};
   --secondary-inverse: #{$white};
 
   // Contrast colors
@@ -40,8 +40,8 @@
   --mark-color: #{mix($black, $grey-900, 37.5%)};
 
   // Inserted (<ins>) & Deleted (<ins>)
-  --ins-color: #{$green-700};
-  --del-color: #{$red-800};
+  --ins-color: #{$green-400};
+  --del-color: #{$red-400};
 
   // Blockquote
   --blockquote-border-color: var(--muted-border-color);
@@ -64,10 +64,10 @@
   --form-element-disabled-background-color: #{$grey-800};
   --form-element-disabled-border-color: #{$grey-700};
   --form-element-disabled-opacity: 0.5;
-  --form-element-invalid-border-color: #{$red-900};
-  --form-element-invalid-active-border-color: #{$red-800};
-  --form-element-valid-border-color: #{$green-800};
-  --form-element-valid-active-border-color: #{$green-700};
+  --form-element-invalid-border-color: #{$red-500};
+  --form-element-invalid-active-border-color: #{$red-500};
+  --form-element-valid-border-color: #{$green-500};
+  --form-element-valid-active-border-color: #{$green-500};
 
   // Switch (input[type="checkbox"][role="switch"])
   --switch-background-color: #{mix($grey-800, $grey-700)};
@@ -87,7 +87,7 @@
   --table-row-stripped-background-color: #{rgba($grey-500, 0.05)};
 
   // Code
-  --code-background-color: #{mix($black, $grey-900, 12.5%)};
+  --code-background-color: #{mix($black, $grey-800, 12.5%)};
   --code-color: var(--muted-color);
   --code-kbd-background-color: var(--contrast);
   --code-kbd-color: var(--contrast-inverse);
@@ -103,12 +103,12 @@
   --accordion-open-summary-color: var(--muted-color);
 
   // Card (<article>)
-  --card-background-color: #{mix($black, $grey-900, 25%)};
+  --card-background-color: #{mix($black, $grey-500, 25%)};
   --card-border-color: #{mix($black, $grey-900, 37.5%)};
   --card-box-shadow: 0 0.125rem 1rem #{rgba($black, 0.06)},
     0 0.125rem 2rem #{rgba($black, 0.12)},
     0 0 0 0.0625rem #{rgba($black, 0.036)};
-  --card-sectionning-background-color: #{mix($black, $grey-900, 12.5%)};
+  --card-sectionning-background-color: #{mix($black, $grey-700, 12.5%)};
 
   // Progress
   --progress-background-color: #{mix($grey-900, $grey-800)};

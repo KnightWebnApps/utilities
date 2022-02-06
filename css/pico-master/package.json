@@ -27,6 +27,7 @@
     "url": "https://github.com/picocss/pico/issues"
   },
   "scripts": {
+    "color": "node colors.js",
     "css:compile": "sass --style expanded --no-source-map --no-error-css scss/:css/",
     "css:compile:docs": "sass --style expanded --no-source-map --no-error-css docs/scss/:docs/css/",
     "css:prefix": "postcss css/*.css css/*/*.css docs/css/*.css !css/*.min.css !docs/css/*.min.css --use autoprefixer --no-map --replace",
@@ -55,5 +56,8 @@
     "rollup": "^2.58.0",
     "sass": "^1.43.3",
     "uglify-js": "^3.14.2"
+  },
+  "dependencies": {
+    "@k-vyn/coloralgorithm": "^1.0.0"
   }
 }

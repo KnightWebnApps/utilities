@@ -15,19 +15,19 @@
   --h6-color: #{mix($grey-700, $grey-600)};
 
   // Muted colors
-  --muted-color: #{$grey-500};
-  --muted-border-color: #{$grey-50};
+  --muted-color: #{$grey-300};
+  --muted-border-color: #{$grey-100};
 
   // Primary colors
   --primary: #{$primary-600};
   --primary-hover: #{$primary-700};
   --primary-focus: #{rgba($primary-600, 0.125)};
-  --primary-inverse: #{$white};
+  --primary-inverse: #{$black};
 
   // Secondary colors
-  --secondary: #{$grey-600};
-  --secondary-hover: #{$grey-700};
-  --secondary-focus: #{rgba($grey-600, 0.125)};
+  --secondary: #{$grey-400};
+  --secondary-hover: #{$grey-500};
+  --secondary-focus: #{rgba($grey-400, 0.125)};
   --secondary-inverse: #{$white};
 
   // Contrast colors
@@ -88,7 +88,7 @@
   --table-row-stripped-background-color: #{mix($grey-50, $white)};
 
   // Code
-  --code-background-color: #{$grey-50};
+  --code-background-color: #{$grey-100};
   --code-color: var(--muted-color);
   --code-kbd-background-color: var(--contrast);
   --code-kbd-color: var(--contrast-inverse);
@@ -103,12 +103,12 @@
   --accordion-open-summary-color: var(--muted-color);
 
   // Card (<article>)
-  --card-background-color: var(--background-color);
+  --card-background-color: #{$grey-100};
   --card-border-color: var(--muted-border-color);
   --card-box-shadow: 0 0.125rem 1rem #{rgba($grey-900, 0.04)},
     0 0.125rem 2rem #{rgba($grey-900, 0.08)},
     0 0 0 0.0625rem #{rgba($grey-900, 0.024)};
-  --card-sectionning-background-color: #{mix($grey-50, $white, 25%)};
+  --card-sectionning-background-color: #{mix($grey-400, $white, 25%)};
 
   // Progress
   --progress-background-color: #{$grey-100};

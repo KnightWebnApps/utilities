@@ -54,3 +54,14 @@ dialog:not([open]) {
 canvas {
   display: inline-block;
 }
+
+// Utils 
+.icon {
+  width: var(--icon-size);
+  height: var(--icon-size);
+}
+
+.center {
+  display: grid;
+  place-items: center;
+}
