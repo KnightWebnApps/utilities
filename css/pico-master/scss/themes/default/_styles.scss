@@ -232,3 +232,26 @@ samp {
 kbd {
   --font-weight: bolder;
 }
+
+// Accent the first line of article paragraph
+article p:first-of-type:first-line {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: var(--accent);
+}
+
+// Sticky Utility
+.sticky {
+  position: sticky;
+}
+
+// Center Text Utility
+.center-text {
+  text-align: center;
+}
+
+// Center Utility
+.center {
+  display: grid;
+  place-items: center;
+}

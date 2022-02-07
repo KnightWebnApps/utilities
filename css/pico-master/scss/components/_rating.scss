@@ -1,0 +1,93 @@
+/* 
+<fieldset class="star-rating">
+  <legend>Your rating:</legend>
+  <div>
+    <input type="radio" name="rating" value="1" id="rating1" />
+    <label for="rating1"><span>1</span></label>
+    <input type="radio" name="rating" value="2" id="rating2" />
+    <label for="rating2"><span>2</span></label>
+    <input type="radio" name="rating" value="3" id="rating3" />
+    <label for="rating3"><span>3</span></label>
+    <input type="radio" name="rating" value="4" id="rating4" />
+    <label for="rating4"><span>4</span></label>
+    <input type="radio" name="rating" value="5" id="rating5" />
+    <label for="rating5"><span>5</span></label>
+    <input type="radio" name="rating" value="6" id="rating6" />
+    <label for="rating6"><span>6</span></label>
+    <input type="radio" name="rating" value="7" id="rating7" />
+    <label for="rating7"><span>7</span></label>
+    <input type="radio" name="rating" value="8" id="rating8" />
+    <label for="rating8"><span>8</span></label>
+    <input type="radio" name="rating" value="9" id="rating9" />
+    <label for="rating9"><span>9</span></label>
+    <input type="radio" name="rating" value="10" id="rating10" />
+    <label for="rating10"><span>5</span></label>
+  </div>
+</fieldset>
+*/
+
+.hide-visually,
+.star-rating > input {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(
+    1px 1px 1px 1px
+  ); /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+  clip: rect(
+    1px,
+    1px,
+    1px,
+    1px
+  ); /*maybe deprecated but we need to support legacy browsers */
+  clip-path: inset(
+    50%
+  ); /*modern browsers, clip-path works inwards from each corner*/
+  white-space: nowrap; /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
+}
+
+.star-rating {
+  font-size: 40px;
+  display: inline-flex;
+  padding: 0;
+}
+
+.star-rating:focus-within {
+  outline: 3px solid #add8e6;
+}
+
+.star-rating label {
+  cursor: pointer;
+  line-height: 1em;
+  text-align: center;
+}
+
+.star-rating label .star {
+  height: 1em;
+  width: 1em;
+  display: inline-block;
+}
+
+.star-rating > label {
+  -webkit-text-stroke: 2px black;
+}
+
+.star-rating input:checked ~ label > span.star,
+.star-rating > label:hover ~ input ~ label > span.star {
+  color: #fff;
+}
+
+.star-rating span.star,
+.star-rating:hover > input + label > span.star,
+.star-rating > input:checked + label > span.star,
+.star-rating > input ~ label:hover > span.star {
+  color: gold;
+}
+
+.star-rating > input ~ label:hover > span.star {
+  color: orange;
+}
