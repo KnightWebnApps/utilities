@@ -22,7 +22,9 @@ hr {
 template {
   @if $enable-important {
     display: none !important;
-  } @else {
+  }
+
+  @else {
     display: none;
   }
 }
@@ -64,4 +66,15 @@ canvas {
 .center {
   display: grid;
   place-items: center;
+}
+
+
+.center-text {
+  text-align: center;
+}
+
+article p:first-of-type:first-line {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: var(--accent);
 }
